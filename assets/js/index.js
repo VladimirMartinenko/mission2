@@ -17,9 +17,9 @@ function Car(manufacturer,model,color,speed,maxSpeed,releaseYear,fuelConsumption
  
  function CarPrototype(){
    this.accelerate = function(){
-     if(this.speed<200){
+     if(this.speed<this.maxSpeed){
      return this.speed+=20;}
-     else{this.speed = 200}
+     else{this.speed = this.maxSpeed}
    };
    this.brake = function(){
      if(this.speed>0){
